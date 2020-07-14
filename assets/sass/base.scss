@@ -1,0 +1,46 @@
+/*------------VARIABLES---------------*/
+
+// Colors
+
+$color-primary: #720231;
+$color-primary-light--1: #810237;
+$color-primary-dark--1: #64012B;
+$color-primary-dark--2: #560125;
+
+$color-secondary: #0a2248;
+$color-black: #1f1f1f;
+$color-gray-1: #cccccc;
+$color-white: #f8f8f8;
+
+//Fonts
+
+$default-font: "Lato", sans-serif;
+$header-font: 'Hind Siliguri', sans-serif;
+$default-font-size: 1.6rem;
+
+//Grid 
+
+$grid-width: 114rem; //1140 px
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+
+/*---------------------BASE STYLES ---------------------*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+    //Defines 1 rem. If default font is 16px, 1 rem = 10px.
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing:border-box;
+}
