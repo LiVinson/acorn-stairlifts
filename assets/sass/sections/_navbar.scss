@@ -1,0 +1,26 @@
+.nav {
+  max-width: 100%;
+  background-color: $color-white;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    width: 20rem;
+    height: auto;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    color: $color-primary;
+    list-style: none;
+  }
+
+  &__items {
+    font-size: 1.5rem;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}

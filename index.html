@@ -12,12 +12,34 @@
 </head>
 
 <body>
-    <!-- Sticky nav with 3 links.   -->
-    <nav></nav>
-    <!-- video element with  header and subheader text  -->
-    <header>
-   
-
+    <!-- Sticky nav with logo and 3 internal links tp sections.   -->
+    <nav class="nav">
+        <img src="./assets/img/acorn_logo.png" alt="Acorn Stairlifts logo" class="nav__logo">
+        <ul class="nav__list">
+            <li class="nav__items">About</li>
+            <li class="nav__items">Reviews</li>
+            <li class="nav__items">Contact Us</li>
+        </ul>
+    </nav>
+    <!-- video background with box containing header, subheader text, and button  -->
+    <header class="header">
+        <div class="header__video">
+            <video class="header__video-content" autoplay loop muted>
+                <source src="./assets/img/acorn-trim1.mp4" type="video/mp4">
+                Your browser does not support this type of media.
+            </video>
+        </div>
+        <!-- positioned to the left and slightly below header  -->
+        <div class="header__content">
+                <h2 class="heading--primary">
+                    FastTrack StairLift Installation
+                </h2>
+                <p class="header__subheading">
+                    Start the process today to enjoy the home you love tomorrow!</p>
+            <a href="#contact" class="btn btn--cta">
+                Get a Free Quote!
+            </a>
+        </div>
     </header>
 
     <main>
