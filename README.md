@@ -43,6 +43,16 @@ npm run build:css
   * responsive design
   * video background
 
+## Next Steps ⏭️
+This website was completed in less than 48 hours. If I continue this project, my next steps would be to:
+
+* Improve responsiveness, especially on mobile devices
+* Improve cross browser compatability
+* Improve accessibility and user experience by enhancing the focused, active and visited states of buttons and logos
+* Improve the logo design
+* Add a carousel to the review section to be able to display more reviews
+  
+
 ## Contributions 🤝🏾
 
 I am not open to accepting pull requests at this time, but feel free to fork the repository to make changes on your own.
