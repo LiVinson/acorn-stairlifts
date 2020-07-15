@@ -11,6 +11,9 @@
 .u-margin-bottom-sm {
   margin-bottom: 2rem; }
 
+.light {
+  color: #f1f1ee !important; }
+
 /*---------------------BASE STYLES ---------------------*/
 *,
 *::after,
@@ -81,7 +84,7 @@ body {
 .btn {
   display: inline-block;
   min-width: 2rem;
-  padding: 1rem 2rem;
+  padding: 1rem 3.5rem;
   color: #a10244;
   border: none;
   font-size: 1.8rem;
@@ -171,6 +174,60 @@ body {
     fill: #a10244;
     margin-right: 3rem; }
 
+.contact {
+  background-color: #0a2248;
+  padding: 4rem 0rem; }
+  .contact__container {
+    width: 40%;
+    margin: 0 auto; }
+
+.form {
+  margin-top: 3rem;
+  width: 100%; }
+  .form__group {
+    position: relative;
+    width: 100%;
+    margin-bottom: .5rem;
+    padding-top: 2.2rem; }
+  .form__input, .form__select {
+    width: 100%;
+    display: block;
+    padding: 1.5rem 1.2rem;
+    margin-top: 0.2rem;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #e0dede;
+    color: #1f1f1f; }
+    .form__input:focus, .form__select:focus {
+      outline: none;
+      box-shadow: 0.2rem 0.6rem 1.1rem rgba(224, 222, 222, 0.4); }
+    .form__input:placeholder-shown + .form__label, .form__select:placeholder-shown + .form__label {
+      top: 50%;
+      left: 0;
+      transform: translate(1rem, -50%);
+      opacity: 0;
+      color: #f1f1ee;
+      z-index: -5; }
+  .form__label {
+    transition: all .4s ease-in;
+    color: #d8d8d8;
+    font-size: 1.5rem;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(1rem, 0);
+    z-index: 5;
+    opacity: 1; }
+  .form__submit {
+    font-size: 2rem;
+    min-width: 50%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; }
+
 .reviews {
   width: 100%;
   padding: 4rem 1rem; }
@@ -188,7 +245,7 @@ body {
   padding: 5rem 3rem 2.5rem 3rem;
   background-color: white;
   border-radius: 3%;
-  border: solid 0.2rem #cccccc; }
+  border: solid 0.2rem #e0dede; }
 
 .review__img-container {
   position: absolute;

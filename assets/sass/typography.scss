@@ -10,7 +10,6 @@ body {
 
   &--primary {
     font-family: $header-font;
-
     text-align: center;
     font-size: 4.5rem;
     line-height: 1.1;
@@ -73,7 +72,7 @@ body {
 .btn {
   display:inline-block;
   min-width: 2rem;
-  padding: 1rem 2rem;
+  padding: 1rem 3.5rem;
   color: $color-primary;
   border: none;
   font-size: 1.8rem;

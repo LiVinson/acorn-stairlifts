@@ -9,7 +9,8 @@ $color-primary-dark--2: #720231;
 
 $color-secondary: #0a2248;
 $color-black: #1f1f1f;
-$color-gray-1: #cccccc;
+$color-gray-1: #e0dede;
+$color-gray-2: #d8d8d8;
 // $color-white: #f8f8f8;
 $color-white: #f1f1ee;
 
@@ -42,6 +43,10 @@ $gutter-horizontal: 6rem;
 
   .u-margin-bottom-sm {
     margin-bottom: 2rem;
+  }
+
+  .light {
+    color: $color-white !important;
   }
 
 
