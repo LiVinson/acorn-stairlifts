@@ -1,10 +1,41 @@
 .contact {
   background-color: $color-secondary;
-  padding: 4rem 0rem;
+  padding: 8rem 0rem;
 
   &__container {
     width: 40%;
     margin: 0 auto;
+
+    @include responsive(tab-land) {
+      width: 50%;
+    }
+
+    @include responsive(tab-port) {
+      width: 60%;
+    }
+    @include responsive(phone) {
+      width: 80%;
+    }
+  }
+
+  &__focus-text {
+    color: $color-primary-light--1;
+    text-transform: uppercase;
+
+  }
+
+  &__subheading {
+    font-size: 2.5rem;
+    text-align:center;
+    color: $color-gray-3;
+    margin-top:1rem;
+  }
+
+  
+  &__phone {
+    font-size: 3rem;
+    text-align:center;
+    color: $color-primary-light--1;
   }
 }
 
@@ -17,6 +48,12 @@
     width: 100%;
     margin-bottom: .5rem;
     padding-top: 2.2rem;
+
+    @include responsive(phone) {
+      width: 80%;
+      margin: 0 auto;
+      
+    }
   }
 
   &__input,
@@ -32,9 +69,12 @@
     color: $color-black;
 
     &:focus {
-      outline: none;
-      box-shadow: 0.2rem 0.6rem 1.1rem rgba($color-gray-1, 0.4);
-    
+      border-bottom: solid 2px $color-primary;
+      outline: none;    
+    }
+
+    &:not(:placeholder-shown) {
+      border-bottom: solid 2px $color-primary;
     }
 
     &:placeholder-shown + .form__label   {

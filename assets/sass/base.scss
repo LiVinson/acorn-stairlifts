@@ -41,7 +41,11 @@ $default-font-size: 1.6rem;
   }
 
   .light {
-    color: $color-white !important;
+    color: $color-gray-1 !important;
+  }
+
+  .dark {
+    color: $color-secondary !important;
   }
 
 /*---------------------BASE STYLES ---------------------*/

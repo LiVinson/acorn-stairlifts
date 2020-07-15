@@ -12,7 +12,10 @@
   margin-bottom: 2rem; }
 
 .light {
-  color: #f1f1ee !important; }
+  color: #e0dede !important; }
+
+.dark {
+  color: #0a2248 !important; }
 
 /*---------------------BASE STYLES ---------------------*/
 *,
@@ -252,10 +255,31 @@ body {
 
 .contact {
   background-color: #0a2248;
-  padding: 4rem 0rem; }
+  padding: 8rem 0rem; }
   .contact__container {
     width: 40%;
     margin: 0 auto; }
+    @media only screen and (max-width: 75.25em) {
+      .contact__container {
+        width: 50%; } }
+    @media only screen and (max-width: 56.25em) {
+      .contact__container {
+        width: 60%; } }
+    @media only screen and (max-width: 37.5em) {
+      .contact__container {
+        width: 80%; } }
+  .contact__focus-text {
+    color: #b6024d;
+    text-transform: uppercase; }
+  .contact__subheading {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #b3b0b0;
+    margin-top: 1rem; }
+  .contact__phone {
+    font-size: 3rem;
+    text-align: center;
+    color: #b6024d; }
 
 .form {
   margin-top: 3rem;
@@ -265,6 +289,10 @@ body {
     width: 100%;
     margin-bottom: .5rem;
     padding-top: 2.2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .form__group {
+        width: 80%;
+        margin: 0 auto; } }
   .form__input, .form__select {
     width: 100%;
     display: block;
@@ -276,8 +304,10 @@ body {
     background-color: #e0dede;
     color: #1f1f1f; }
     .form__input:focus, .form__select:focus {
-      outline: none;
-      box-shadow: 0.2rem 0.6rem 1.1rem rgba(224, 222, 222, 0.4); }
+      border-bottom: solid 2px #a10244;
+      outline: none; }
+    .form__input:not(:placeholder-shown), .form__select:not(:placeholder-shown) {
+      border-bottom: solid 2px #a10244; }
     .form__input:placeholder-shown + .form__label, .form__select:placeholder-shown + .form__label {
       top: 50%;
       left: 0;
@@ -309,11 +339,24 @@ body {
   padding: 4rem 1rem; }
   .reviews__content {
     width: 80%;
+    max-width: 130rem;
     margin: 0rem auto 2rem auto; }
+    @media only screen and (max-width: 75.25em) {
+      .reviews__content {
+        width: 85%; } }
+    @media only screen and (max-width: 56.25em) {
+      .reviews__content {
+        width: 60%; } }
+    @media only screen and (max-width: 37.5em) {
+      .reviews__content {
+        width: 75%; } }
   .reviews__container {
     margin-top: 10rem;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 56.25em) {
+      .reviews__container {
+        flex-direction: column; } }
 
 .review__card {
   position: relative;
@@ -322,6 +365,10 @@ body {
   background-color: white;
   border-radius: 3%;
   border: solid 0.2rem #e0dede; }
+  @media only screen and (max-width: 56.25em) {
+    .review__card {
+      width: 100%;
+      margin-bottom: 5rem; } }
 
 .review__img-container {
   position: absolute;
