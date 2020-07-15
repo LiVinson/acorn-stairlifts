@@ -5,13 +5,14 @@ body {
   color: $color-black;
 }
 
-// ------------ Headings -----------------
+// ------------ Headings & Text -----------------
 .heading {
-  font-family: $header-font;
 
   &--primary {
+    font-family: $header-font;
+
     text-align: center;
-    font-size: 4rem;
+    font-size: 4.5rem;
     line-height: 1.1;
     width: fit-content;
     color: $color-white;
@@ -20,12 +21,39 @@ body {
     font-weight: 400;
     margin-bottom: 1rem;
   }
+
+  &--secondary {
+    font-family: $header-font;
+    font-size:3.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: $color-primary;
+    letter-spacing: 0.2rem;
+    padding: 0 2rem;
+    margin-bottom:4rem;
+  }
+  
+  &--tertiary {
+    font-size:2rem;
+    color: $color-secondary;
+    text-align:left;
+    margin-bottom:.5rem;
+    // letter-spacing: 0.2rem;
+    // text-align:center;
+    // margin-bottom:1rem;
+  }
+
+}
+
+.paragraph {
+  font-size: 1.5rem;
 }
 
 // ------------ Buttons -----------------
 
 //links styled as buttons
 .btn {
+  display:inline-block;
   min-width: 2rem;
   padding: 1rem 2rem;
   color: $color-primary;

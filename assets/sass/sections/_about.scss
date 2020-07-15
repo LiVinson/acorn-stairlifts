@@ -1,0 +1,33 @@
+.about {
+  width: 100%;
+  padding: 10rem 1rem 8rem 1rem;
+
+  //Holds all about content
+  &__container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+
+  }
+
+  //Holds 3 about groups, each containing icon, header and paragraph
+  &__content {
+    // width: 50%;
+    margin: 0 auto;
+  }
+
+  //Contains icon, header, and paragraph
+  &__group {
+      display:flex;
+      align-items:center;
+      margin-bottom:2rem;      
+  }
+
+  &__icon {
+      display:inline-block;
+      flex: 0 0 5rem;
+      height:4rem;
+      fill: $color-primary;
+      margin-right: 3rem;
+  }  
+}

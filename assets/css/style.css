@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   max-width: 100vw;
   min-height: 100vh;
-  background-color: #f8f8f8; }
+  background-color: #f1f1ee; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -22,20 +22,39 @@ body {
   line-height: 1.5;
   color: #1f1f1f; }
 
-.heading {
-  font-family: "Hind Siliguri", sans-serif; }
-  .heading--primary {
-    text-align: center;
-    font-size: 4rem;
-    line-height: 1.1;
-    width: fit-content;
-    color: #f8f8f8;
-    text-transform: uppercase;
-    letter-spacing: 0.6rem;
-    font-weight: 400;
-    margin-bottom: 1rem; }
+.heading--primary {
+  font-family: "Hind Siliguri", sans-serif;
+  text-align: center;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  width: fit-content;
+  color: #f1f1ee;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem; }
+
+.heading--secondary {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #a10244;
+  letter-spacing: 0.2rem;
+  padding: 0 2rem;
+  margin-bottom: 4rem; }
+
+.heading--tertiary {
+  font-size: 2rem;
+  color: #0a2248;
+  text-align: left;
+  margin-bottom: .5rem; }
+
+.paragraph {
+  font-size: 1.5rem; }
 
 .btn {
+  display: inline-block;
   min-width: 2rem;
   padding: 1rem 2rem;
   color: #a10244;
@@ -45,17 +64,17 @@ body {
   text-decoration: none; }
   .btn--primary {
     background-color: #a10244;
-    color: #f8f8f8; }
+    color: #f1f1ee; }
   .btn--cta {
     min-width: 3rem;
     padding: 1.5rem 4rem;
     background-color: #a10244;
-    color: #f8f8f8;
+    color: #f1f1ee;
     font-size: 2.2rem; }
 
 .nav {
   max-width: 100%;
-  background-color: #f8f8f8;
+  background-color: #f1f1ee;
   padding: 1rem 3rem;
   display: flex;
   justify-content: space-between; }
@@ -96,13 +115,33 @@ body {
   .header__content {
     position: absolute;
     bottom: -15%;
-    left: 10%;
+    right: 10%;
     width: 35%;
     text-align: center;
     padding: 4rem 4rem;
     background-color: rgba(10, 34, 72, 0.8);
-    color: #f8f8f8; }
+    color: #f1f1ee; }
   .header__subheading {
     font-size: 2rem;
     margin-bottom: 2rem;
     color: inherit; }
+
+.about {
+  width: 100%;
+  padding: 10rem 1rem 8rem 1rem; }
+  .about__container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem; }
+  .about__content {
+    margin: 0 auto; }
+  .about__group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem; }
+  .about__icon {
+    display: inline-block;
+    flex: 0 0 5rem;
+    height: 4rem;
+    fill: #a10244;
+    margin-right: 3rem; }
