@@ -97,8 +97,56 @@
 
         <!-- SECTION 2: Contact Form for quote.  -->
         <section class="contact" id="contact">
+            <div class="contact__container">
 
+                <form action="#" class="form">
+                    <!-- Labels will appear above input -->
+                    <div class="form__group form__group--input">
+                        <input type="text" class="form__input" placeholder="First Name" name="first_name" required>
+                        <label for="first_name" class="form__label">First Name</label>
+                    </div>
+                    <div class="form__group form__group--input">
+                        <input type="text" class="form__input" placeholder="Last Name" name="last_name" required>
+                        <label for="last_name" class="form__label">Last Name</label>
+                    </div>
+                    <div class="form__group form__group--input">
+                        <input type="email" class="form__input" placeholder="Email" name="email" required>
+                        <label for="email" class="form__label">Email Address</label>
+                    </div>
+                    <div class="form__group form__group--input">
+                        <input type="tel" class="form__input" placeholder="123-456-7890" name="phone" required>
+                        <label for="phone" class="form__label">Phone Number</label>
+                    </div>
+                    <div class="form__group form__group--input">
+                        <input type="text" class="form__input" placeholder="123 Main Street" name="address1" required>
+                        <label for="address1" class="form__label">Street Address</label>
+                    </div>
+                    <div class="form__group form__group--input">
+                        <input type="text" class="form__input" placeholder="Atlanta" name="city" required>
+                        <label for="city" class="form__label">City</label>
+                    </div>
+                    <div class="form__group form__group--input">
+                        <select name="state">
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="AL">AL</option>
+                        </select>
+                        <label for="state" class="form__label">State</label>
+                    </div>
+                    <!-- Contains success or error message on form submission -->
+                    <p class="paragraph form__feedback">
+                    </p>
+                    <div class="form__group form__group--btn">
+                        <button class="btn  form__submit" type="submit">
+                            Send
+                            <svg class="contact__icon">
+                                <use xlink:href="./assets/img/sprite.svg#star" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
 
+            </div>
         </section>
 
         <!-- SECTION 3: Reviews   -->
@@ -119,7 +167,8 @@
 
                         </div>
                         <h4 class="heading--quaternary">John Doe</h4>
-                        <p class="paragraph ">Lorem ipsum dolor sit amet consec tetur adip isicing elit. Vel quaerat qui,
+                        <p class="paragraph ">Lorem ipsum dolor sit amet consec tetur adip isicing elit. Vel quaerat
+                            qui,
                             quod
                             nisi nemo illum quisncidunt dolore architecto.</p>
                     </div>
@@ -146,9 +195,6 @@
                 </div>
                 <!-- End reviews container -->
             </div>
-
-
-
         </section>
 
         <!-- FOOTER -  Contain basic information - phone number, etc .  -->
