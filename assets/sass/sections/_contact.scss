@@ -21,20 +21,18 @@
   &__focus-text {
     color: $color-primary-light--1;
     text-transform: uppercase;
-
   }
 
   &__subheading {
     font-size: 2.5rem;
-    text-align:center;
+    text-align: center;
     color: $color-gray-3;
-    margin-top:1rem;
+    margin-top: 1rem;
   }
 
-  
   &__phone {
     font-size: 3rem;
-    text-align:center;
+    text-align: center;
     color: $color-primary-light--1;
   }
 }
@@ -46,13 +44,12 @@
   &__group {
     position: relative;
     width: 100%;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     padding-top: 2.2rem;
 
     @include responsive(phone) {
       width: 80%;
       margin: 0 auto;
-      
     }
   }
 
@@ -69,47 +66,51 @@
     color: $color-black;
 
     &:focus {
+      outline: none;
       border-bottom: solid 2px $color-primary;
-      outline: none;    
     }
 
+
+
+    &:placeholder-shown + .form__label {
+      top: 50%;
+      left: 0;
+      transform: translate(1rem, -50%);
+      opacity: 0;
+      color: $color-white;
+      z-index: -5;
+    }
+  }
+
+  &__input {
+    &:focus {
+      border-bottom: solid 2px $color-primary;
+    }
     &:not(:placeholder-shown) {
       border-bottom: solid 2px $color-primary;
     }
-
-    &:placeholder-shown + .form__label   {
-        top:50%;
-        left:0;        
-        transform: translate(1rem, -50%);
-        opacity: 0;
-        color: $color-white;
-        z-index: -5;
-    
-    }
   }
 
-
-
   &__label {
-    transition: all .4s ease-in;
+    transition: all 0.4s ease-in;
     color: $color-gray-2;
     font-size: 1.5rem;
     display: inline-block;
-    position: absolute;    
-    top:0;
-    left:0;
-    transform: translate(1rem,0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(1rem, 0);
     z-index: 5;
-    opacity:1;
+    opacity: 1;
   }
 
   &__submit {
-      font-size: 2rem;
-    min-width:50%;
+    font-size: 2rem;
+    min-width: 50%;
     margin: 0 auto;
-    display:block; 
-    padding-top:1.5rem;
-    padding-bottom:1.5rem;   
+    display: block;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   &__icon {

@@ -300,7 +300,7 @@ body {
   .form__group {
     position: relative;
     width: 100%;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     padding-top: 2.2rem; }
     @media only screen and (max-width: 37.5em) {
       .form__group {
@@ -317,9 +317,7 @@ body {
     background-color: #e0dede;
     color: #1f1f1f; }
     .form__input:focus, .form__select:focus {
-      border-bottom: solid 2px #a10244;
-      outline: none; }
-    .form__input:not(:placeholder-shown), .form__select:not(:placeholder-shown) {
+      outline: none;
       border-bottom: solid 2px #a10244; }
     .form__input:placeholder-shown + .form__label, .form__select:placeholder-shown + .form__label {
       top: 50%;
@@ -328,8 +326,12 @@ body {
       opacity: 0;
       color: #f1f1ee;
       z-index: -5; }
+  .form__input:focus {
+    border-bottom: solid 2px #a10244; }
+  .form__input:not(:placeholder-shown) {
+    border-bottom: solid 2px #a10244; }
   .form__label {
-    transition: all .4s ease-in;
+    transition: all 0.4s ease-in;
     color: #d8d8d8;
     font-size: 1.5rem;
     display: inline-block;
