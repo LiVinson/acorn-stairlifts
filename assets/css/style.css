@@ -24,6 +24,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -106,16 +115,26 @@ body {
   padding: 1rem 3rem;
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 37.5em) {
+    .nav {
+      flex-direction: column;
+      align-items: center; } }
   .nav__logo {
     width: 20rem;
     height: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .nav__logo {
+        margin-bottom: 1.5rem; } }
   .nav__list {
     display: flex;
     align-items: center;
     color: #a10244;
     list-style: none; }
+    .nav__list a {
+      text-decoration: none;
+      color: #a10244; }
   .nav__items {
-    font-size: 1.5rem; }
+    font-size: 1.8rem; }
     .nav__items:not(:last-child) {
       margin-right: 2rem; }
 

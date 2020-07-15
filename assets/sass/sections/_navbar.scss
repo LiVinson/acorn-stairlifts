@@ -5,9 +5,17 @@
   display: flex;
   justify-content: space-between;
 
+  @include responsive(phone) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__logo {
     width: 20rem;
     height: auto;
+    @include responsive(phone) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__list {
@@ -15,10 +23,15 @@
     align-items: center;
     color: $color-primary;
     list-style: none;
+
+    a {
+      text-decoration: none;
+      color: $color-primary;
+    }
   }
 
   &__items {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     &:not(:last-child) {
       margin-right: 2rem;
     }

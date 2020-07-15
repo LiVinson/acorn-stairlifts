@@ -21,12 +21,6 @@ $default-font: "Lato", sans-serif;
 $header-font: 'Hind Siliguri', sans-serif;
 $default-font-size: 1.6rem;
 
-//-----------------Grid 
-
-$grid-width: 114rem; //1140 px
-$gutter-vertical: 8rem;
-$gutter-vertical-small: 6rem;
-$gutter-horizontal: 6rem;
 
 //-------------Utilities
   .u-center-text {
@@ -49,10 +43,6 @@ $gutter-horizontal: 6rem;
     color: $color-white !important;
   }
 
-
-
-
-
 /*---------------------BASE STYLES ---------------------*/
 
 *,
@@ -66,6 +56,18 @@ $gutter-horizontal: 6rem;
 html {
     //Defines 1 rem. If default font is 16px, 1 rem = 10px.
     font-size: 62.5%;
+
+    @include responsive(tab-land) { //width <=1200px
+      font-size: 56.25%; //1 rem = 9px
+    }
+  
+    @include responsive(tab-port) { //width <=900px
+      font-size: 50%; //1 rem = 8px
+    }
+  
+    @include responsive(big-desktop) {
+      font-size: 75%; //1 rem = 12px 
+    }
 }
 
 body {
@@ -75,3 +77,4 @@ body {
     background-color: $color-white;
 
 }
+
