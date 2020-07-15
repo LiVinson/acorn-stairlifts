@@ -51,7 +51,7 @@ This website was completed in less than 48 hours. If I continue this project, my
 * Improve accessibility and user experience by enhancing the focused, active and visited states of buttons and logos
 * Improve the logo design
 * Add a carousel to the review section to be able to display more reviews
-* 
+  
 
 ## Contributions 🤝🏾
 
