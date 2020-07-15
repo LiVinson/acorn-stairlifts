@@ -1,4 +1,16 @@
 /*------------VARIABLES---------------*/
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-xl {
+  margin-bottom: 10rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 2rem; }
+
 /*---------------------BASE STYLES ---------------------*/
 *,
 *::after,
@@ -42,13 +54,26 @@ body {
   color: #a10244;
   letter-spacing: 0.2rem;
   padding: 0 2rem;
-  margin-bottom: 4rem; }
+  width: 100%; }
 
 .heading--tertiary {
+  font-family: "Hind Siliguri", sans-serif;
   font-size: 2rem;
   color: #0a2248;
   text-align: left;
   margin-bottom: .5rem; }
+
+.heading--quaternary {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 1.8rem;
+  color: #0a2248;
+  margin-bottom: 1.2rem; }
+
+.section-subheading {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+  width: 60%; }
 
 .paragraph {
   font-size: 1.5rem; }
@@ -128,7 +153,7 @@ body {
 
 .about {
   width: 100%;
-  padding: 10rem 1rem 8rem 1rem; }
+  padding: 10rem 1rem 4rem 1rem; }
   .about__container {
     width: 50%;
     margin: 0 auto;
@@ -145,3 +170,46 @@ body {
     height: 4rem;
     fill: #a10244;
     margin-right: 3rem; }
+
+.reviews {
+  width: 100%;
+  padding: 4rem 1rem; }
+  .reviews__content {
+    width: 80%;
+    margin: 0rem auto 2rem auto; }
+  .reviews__container {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between; }
+
+.review__card {
+  position: relative;
+  width: 32%;
+  padding: 5rem 3rem 2.5rem 3rem;
+  background-color: white;
+  border-radius: 3%;
+  border: solid 0.2rem #cccccc; }
+
+.review__img-container {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  z-index: 10; }
+  .review__img-container::after {
+    content: "";
+    display: inline-block;
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 50%;
+    background-color: #b6024d;
+    position: absolute;
+    left: 0.6rem;
+    z-index: -10; }
+
+.review__image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%; }

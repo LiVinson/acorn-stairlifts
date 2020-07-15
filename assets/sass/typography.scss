@@ -5,7 +5,7 @@ body {
   color: $color-black;
 }
 
-// ------------ Headings & Text -----------------
+// ------------ Headings, Subheadings & Text -----------------
 .heading {
 
   &--primary {
@@ -30,19 +30,37 @@ body {
     color: $color-primary;
     letter-spacing: 0.2rem;
     padding: 0 2rem;
-    margin-bottom:4rem;
+
+    width:100%;
   }
-  
+
   &--tertiary {
+    font-family: $header-font;
+
     font-size:2rem;
     color: $color-secondary;
     text-align:left;
     margin-bottom:.5rem;
-    // letter-spacing: 0.2rem;
-    // text-align:center;
-    // margin-bottom:1rem;
   }
 
+  
+  &--quaternary {
+    font-family: $header-font;
+    font-size:1.8rem;
+    color: $color-secondary;
+    // flex: 0 0 100%;
+    // text-align:center;
+    margin-bottom: 1.2rem;
+    // margin-bottom:.5rem;
+  }
+
+}
+
+.section-subheading {
+  margin: 0 auto;
+  text-align:center;
+  font-size:2rem;
+  width: 60%;
 }
 
 .paragraph {

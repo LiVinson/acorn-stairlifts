@@ -1,0 +1,58 @@
+.reviews {
+  width: 100%;
+  padding: 4rem 1rem;
+
+  //contains everything within section
+  &__content {
+    width: 80%;
+    margin: 0rem auto 2rem auto;
+  }
+
+  //contains review card components
+  &__container {
+      margin-top:10rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+//Review Card component
+.review {
+  &__card {
+    position: relative;
+    width: 32%;
+    padding: 5rem 3rem 2.5rem 3rem;
+    background-color: white;
+    border-radius: 3%;
+    border: solid 0.2rem $color-gray-1;
+  }
+
+  &__img-container {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    z-index: 10;
+
+    //Creates shadow element on edge of reviewer image
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 7.2rem;
+      height: 7.2rem;
+      border-radius: 50%;
+      background-color: $color-primary-light--1;
+      position: absolute;
+      left: 0.6rem;
+      z-index: -10;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+}
