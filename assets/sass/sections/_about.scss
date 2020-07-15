@@ -8,26 +8,45 @@
     margin: 0 auto;
     padding: 2rem;
 
+    @include responsive(tab-port) {
+      width: 75%;
+    }
+
+    @include responsive(phone) {
+      width: 85%;
+    }
   }
 
   //Holds 3 about groups, each containing icon, header and paragraph
   &__content {
-    // width: 50%;
     margin: 0 auto;
   }
 
   //Contains icon, header, and paragraph
   &__group {
-      display:flex;
-      align-items:center;
-      margin-bottom:2rem;      
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
   }
 
   &__icon {
-      display:inline-block;
-      flex: 0 0 5rem;
-      height:4rem;
-      fill: $color-primary;
-      margin-right: 3rem;
-  }  
+    display: inline-block;
+    flex: 0 0 5rem;
+    height: 4rem;
+    fill: $color-primary;
+    margin-right: 2rem;
+    animation: MoveUpDown 0.5s infinite alternate;
+  }
+}
+
+@keyframes MoveUpDown {
+  0% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(1px);
+  }
 }

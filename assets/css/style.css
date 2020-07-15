@@ -49,10 +49,10 @@ body {
 .heading--primary {
   font-family: "Hind Siliguri", sans-serif;
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 5rem;
   line-height: 1.1;
   width: fit-content;
-  color: #f1f1ee;
+  color: #d8d8d8;
   text-transform: uppercase;
   letter-spacing: 0.6rem;
   font-weight: 400;
@@ -99,6 +99,8 @@ body {
   font-size: 1.8rem;
   border-radius: 0.2rem;
   text-decoration: none; }
+  .btn:hover {
+    color: lighen(#a10244, 10%); }
   .btn--primary {
     background-color: #a10244;
     color: #f1f1ee; }
@@ -108,6 +110,15 @@ body {
     background-color: #a10244;
     color: #f1f1ee;
     font-size: 2.2rem; }
+    .btn--cta:hover {
+      transform: translateY(0) !important;
+      font-size: 2.3rem;
+      color: #e0dede;
+      padding: 1.5rem 4.1rem;
+      background-color: #970240; }
+    .btn--cta:active {
+      background-color: #7c0235;
+      transform: translateY(-2px); }
 
 .nav {
   max-width: 100%;
@@ -125,6 +136,17 @@ body {
     @media only screen and (max-width: 37.5em) {
       .nav__logo {
         margin-bottom: 1.5rem; } }
+  .nav__contact {
+    font-size: 3rem;
+    color: #a10244;
+    font-weight: 400; }
+    @media only screen and (max-width: 56.25em) {
+      .nav__contact {
+        font-size: 2.5rem;
+        font-weight: 600; } }
+    @media only screen and (max-width: 37.5em) {
+      .nav__contact {
+        order: 3; } }
   .nav__list {
     display: flex;
     align-items: center;
@@ -160,18 +182,38 @@ body {
       object-fit: cover;
       object-position: 10% 10%; }
   .header__content {
+    height: 45rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     bottom: -15%;
-    right: 10%;
-    width: 35%;
+    right: 8%;
+    padding: 1rem 2rem;
     text-align: center;
-    padding: 4rem 4rem;
     background-color: rgba(10, 34, 72, 0.8);
     color: #f1f1ee; }
+    @media only screen and (max-width: 56.25em) {
+      .header__content {
+        left: 50%;
+        height: fit-content;
+        width: 80%;
+        padding: 2rem;
+        transform: translateX(-50%);
+        margin-bottom: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__content {
+        width: 90%;
+        bottom: -7%; } }
   .header__subheading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: inherit; }
+    color: #b3b0b0; }
+  .header__focus-text {
+    color: #a10244;
+    text-shadow: 0 0.1rem 0.5rem rgba(224, 222, 222, 0.8); }
 
 .about {
   width: 100%;
@@ -180,6 +222,12 @@ body {
     width: 50%;
     margin: 0 auto;
     padding: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about__container {
+        width: 75%; } }
+    @media only screen and (max-width: 37.5em) {
+      .about__container {
+        width: 85%; } }
   .about__content {
     margin: 0 auto; }
   .about__group {
@@ -191,7 +239,16 @@ body {
     flex: 0 0 5rem;
     height: 4rem;
     fill: #a10244;
-    margin-right: 3rem; }
+    margin-right: 2rem;
+    animation: MoveUpDown 0.5s infinite alternate; }
+
+@keyframes MoveUpDown {
+  0% {
+    transform: translateY(-1px); }
+  50% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(1px); } }
 
 .contact {
   background-color: #0a2248;

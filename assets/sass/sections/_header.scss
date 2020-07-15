@@ -28,20 +28,45 @@
 
   //contains h1, subheader, and button - positioned slihtly below header;
   &__content {
+    height: 45rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     bottom: -15%;
-    right: 10%;
-    width: 35%;
+    right: 8%;
+    padding: 1rem 2rem;
+
     // background-color: rgba($color-white, .2)
     text-align: center;
-    padding: 4rem 4rem;
+    // padding: 4rem 4rem;
     background-color: rgba($color-secondary, 0.8);
     color: $color-white;
 
+    @include responsive(tab-port) {
+      left: 50%;
+      height: fit-content;
+      width: 80%;
+      padding: 2rem;
+      transform: translateX(-50%);
+      margin-bottom:4rem;
+    }
+
+    @include responsive(phone) {
+      width: 90%;
+      bottom: -7%;
+    }
   }
   &__subheading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
-    color:inherit;
+    color: $color-gray-3;
+  }
+
+  &__focus-text {
+    color: $color-primary;
+    text-shadow: 0 0.1rem 0.5rem rgba($color-gray-1, 0.8);
   }
 }

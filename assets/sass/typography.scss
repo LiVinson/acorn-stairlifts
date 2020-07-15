@@ -11,10 +11,12 @@ body {
   &--primary {
     font-family: $header-font;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 5rem;
     line-height: 1.1;
     width: fit-content;
-    color: $color-white;
+
+    // color: $color-white;
+    color: $color-gray-2;
     text-transform: uppercase;
     letter-spacing: 0.6rem;
     font-weight: 400;
@@ -55,6 +57,8 @@ body {
 
 }
 
+
+
 .section-subheading {
   margin: 0 auto;
   text-align:center;
@@ -79,15 +83,17 @@ body {
   border-radius: 0.2rem;
   text-decoration: none;
 
-  // :hover {
+  &:hover {
+    color: lighen($color-primary, 10%);
+    // transform: translateY(3px);
+    
+  }
+
+  // &:active {
 
   // }
 
-  // :active {
-
-  // }
-
-  // :focus {
+  // &:focus {
 
   // }
 
@@ -102,5 +108,19 @@ body {
     background-color: $color-primary;
     color: $color-white;
     font-size: 2.2rem;
+
+    &:hover {
+      transform: translateY(0) !important;      
+      font-size:2.3rem;
+      color: $color-gray-1;
+      padding: 1.5rem 4.1rem;
+      background-color: darken($color-primary, 2%);
+    }
+
+    
+    &:active {
+      background-color: darken($color-primary-dark--1, 1%);
+      transform: translateY(-2px);      
+    }
   }
 }
