@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    background-color:$color-primary;
+    background-color:$color-primary-dark--1;
     padding: 2rem 0rem;
 
 
@@ -16,6 +16,14 @@
     &__logo {
         margin-bottom:1rem;
         width: 20%;
+
+        @include responsive(tab-port) {
+            width: 30%;       
+          }
+
+          @include responsive(phone) {
+            width: 50%;       
+          }
     }
     &__list {
         display:flex;

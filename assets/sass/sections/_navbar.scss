@@ -50,5 +50,23 @@ order: 3;
     &:not(:last-child) {
       margin-right: 2rem;
     }
+
+    &:hover {
+      color: $color-primary-light--1;
+      &:after{
+        content:"";
+        display: block;
+        width: 90%;
+        height: 2px;
+        background-color: currentColor;
+        margin: 0 auto;
+      } 
+
+    }
+
+    &:active {
+      transform:translateY(2px);
+      color: $color-primary-dark--2;
+    }
   }
 }

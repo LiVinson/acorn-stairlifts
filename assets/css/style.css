@@ -103,7 +103,8 @@ body {
   border-radius: 0.2rem;
   text-decoration: none; }
   .btn:hover {
-    color: lighen(#a10244, 10%); }
+    color: lighen(#a10244, 10%);
+    transform: translateY(3px); }
   .btn--primary {
     background-color: #a10244;
     color: #f1f1ee; }
@@ -162,6 +163,18 @@ body {
     font-size: 1.8rem; }
     .nav__items:not(:last-child) {
       margin-right: 2rem; }
+    .nav__items:hover {
+      color: #b6024d; }
+      .nav__items:hover:after {
+        content: "";
+        display: block;
+        width: 90%;
+        height: 2px;
+        background-color: currentColor;
+        margin: 0 auto; }
+    .nav__items:active {
+      transform: translateY(2px);
+      color: #720231; }
 
 .header {
   width: 100%;
@@ -336,7 +349,7 @@ body {
 
 .reviews {
   width: 100%;
-  padding: 4rem 1rem; }
+  padding: 10rem 1rem; }
   .reviews__content {
     width: 80%;
     max-width: 130rem;
@@ -396,7 +409,7 @@ body {
 
 .footer {
   width: 100%;
-  background-color: #a10244;
+  background-color: #810237;
   padding: 2rem 0rem; }
   .footer__container {
     width: 70%;
@@ -407,6 +420,12 @@ body {
   .footer__logo {
     margin-bottom: 1rem;
     width: 20%; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__logo {
+        width: 30%; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__logo {
+        width: 50%; } }
   .footer__list {
     display: flex;
     align-items: center;
